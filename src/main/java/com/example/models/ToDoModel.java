@@ -28,6 +28,7 @@ public class ToDoModel {
     @DateTimeFormat
     private LocalDate doneDate;
 
+    @NotNull
     private UUID uuid;
 
     @NotNull
