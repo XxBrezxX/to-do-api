@@ -46,7 +46,9 @@ public class ToDoController {
     @GetMapping("/todos")
     public ResponseEntity<Object> getTodo(
             @Valid @ModelAttribute FilterModel requestParams) {
+        // System.out.println(requestParams);
         List<ToDoModel> result = db.getFiltered(requestParams);
+        System.out.println(result);
         return CustomResponse.generateResponse(HttpStatus.OK, result);
     }
 

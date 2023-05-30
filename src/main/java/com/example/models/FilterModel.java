@@ -85,6 +85,9 @@ public class FilterModel {
         this.priority = priority;
     }
 
+    public FilterModel() {
+    }
+
     @Override
     public String toString() {
         return "MyModel{" +
